@@ -4,12 +4,12 @@ name: Check for updated configuration on production store
 
 on:
   workflow_dispatch:
-  schedule:
+  # schedule:
     # Runs every 3 hours
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 */3 * * *'
-  push:
-    branches: [ master, main ]
+    # - cron:  '0 */3 * * *'
+  # push:
+    # branches: [ master, main ]
 
 jobs:
   build:
