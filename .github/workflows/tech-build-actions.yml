@@ -44,5 +44,17 @@ jobs:
 
     - name: Echo current date
       run: echo $NOW # Gives "2022-12-11T01:42:20"
+
+    - name: Connect to store
+      env:
+        URL: ${{ secrets.STENCIL_STORE_URL_TECH_SANDBOX }}
+        TOKEN: ${{ secrets.STENCIL_ACCESS_TOKEN_TECH_SANDBOX }}
+      run: stencil init -u $URL -t $TOKEN -p 3000 -h https://api.bigcommerce.com
+      
+    - name: Log stencil config
+      run: cat config.stencil.json    
+
+    - name: Publishing theme to Tech-Sandbox, automatically deleting oldest theme if necessary
+      run: stencil push -a Tech-Sandbox -c TS.com - Technology Sandbox -d -f $NOW
       
 
