@@ -46,7 +46,7 @@ jobs:
         FILENAME: "`r format(Sys.time(), '%d %B, %Y')`"
         
 
-      #run: stencil init -u $URL -t $TOKEN -p 3000 -h https://api.bigcommerce.com
+      run: stencil init -u $URL -t $TOKEN -p 3000 -h https://api.bigcommerce.com
       
     #- name: Log stencil config
       #run: cat config.stencil.json    
