@@ -40,10 +40,10 @@ jobs:
       run: npm ci
 
     - name: Set current date as env variable
-      run: echo "NOW=CornerstoneTheme-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV
+      run: echo "FILENAME=CornerstoneTheme-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV
 
-    - name: Echo current date
-      run: echo $NOW # Gives "2022-12-11T01:42:20"
+    - name: Echo filename
+      run: echo $FILENAME 
 
     - name: Connect to store
       env:
@@ -51,10 +51,10 @@ jobs:
         TOKEN: ${{ secrets.STENCIL_ACCESS_TOKEN_TECH_SANDBOX }}
       run: stencil init -u $URL -t $TOKEN -p 3000 -h https://api.bigcommerce.com
       
-    - name: Log stencil config
-      run: cat config.stencil.json    
+    #- name: Log stencil config
+     # run: cat config.stencil.json    
 
     - name: Publishing theme to Tech-Sandbox, automatically deleting oldest theme if necessary
-      run: stencil push -a Tech-Sandbox -c TS.com - Technology Sandbox -d -f $NOW
+      run: stencil push -a Tech-Sandbox -c TS.com - Technology Sandbox -d -f $FILENAME
       
 
