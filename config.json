@@ -1,5 +1,5 @@
 {
-  "name": "Cornerstone",
+  "name": "Tastefully Simple Cornerstone",
   "version": "6.14.0",
   "template_engine": "handlebars_v4",
   "meta": {
@@ -20,6 +20,7 @@
       "product_comparison_table",
       "complex_search_filtering",
       "customizable_product_selector",
+      "cart_suggested_products",
       "free_customer_support",
       "free_theme_upgrades",
       "high_res_product_images",
@@ -29,7 +30,9 @@
       "persistent_cart",
       "one_page_check_out",
       "product_videos",
+      "google_amp",
       "customized_checkout",
+      "account_payment_methods",
       "enhanced_ecommerce",
       "csrf_protection",
       "account_payment_methods_v2"
@@ -67,6 +70,19 @@
       }
     ],
     "show_channels": false,
+    "ts_api_environment": "qa1",
+    "ts_current_store_base_url": "https://tastefully-simple-sandbox-2.mybigcommerce.com",
+    "ts_shop_more_url": "/shop/",
+    "ts_tsapi_base_url": "gateway.api.tastefullysimple.com/tsapi",
+    "consultant_api_base_url": "consultant.api.tastefullysimple.com",
+    "ts_tsapi_host_party_base_url": "party.api.tastefullysimple.com",
+    "ts_help_email": "help@tastefullysimple.com",
+    "ts_join_store_url": "https://tastefully-simple-inc-sandbox-4.mybigcommerce.com",
+    "ts_consultant_id": "0160785",
+    "ts_affiliation_timer": 60,
+    "ts_debug_mode": true,
+    "ts_affiliate_link": "https://tastefully-simple-inc-sandbox-6.mybigcommerce.com/ts-affiliate-marketing",
+    "zoy_dev_mode": true,
     "hide_breadcrumbs": false,
     "hide_page_heading": false,
     "hide_category_page_heading": false,
@@ -84,7 +100,7 @@
     "homepage_top_products_column_count": 4,
     "homepage_blog_posts_count": 3,
     "productpage_videos_count": 8,
-    "productpage_reviews_count": 9,
+    "productpage_reviews_count": 10,
     "productpage_related_products_count": 10,
     "productpage_similar_by_views_count": 10,
     "categorypage_products_per_page": 12,
@@ -439,7 +455,42 @@
       "settings": {}
     },
     {
-      "name": "Bold",
+      "name": "Tech-Sandbox",
+      "id": "light1",
+      "meta": {
+        "desktop_screenshot": "desktop_light.png",
+        "mobile_screenshot": "mobile_light.png",
+        "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+        "demo_url": "https://cornerstone-light-demo.mybigcommerce.com",
+        "optimized_for": [
+          "multi_purpose",
+          "mobile_tablet_desktop",
+          "sales_discounts",
+          "large_catalog"
+        ],
+        "industries": [
+          "food_beverage"
+        ]
+      },
+      "images": {},
+      "settings": {
+        "ts_api_environment": "qa1",
+        "ts_affiliation_timer": 60,
+        "zoy_dev_mode": false,
+        "ts_affiliate_link": "https://tastefully-simple-inc-sandbox-6.mybigcommerce.com/ts-affiliate-marketing",
+        "google_tagmanager_status": "2",
+        "recipe_search_status": "1",
+        "recipe_search_category_shop_filter_id": "25",
+        "recipe_search_category_recipe_filter_id": "271",
+        "marketplace_brand": "Party Palooza",
+        "subscription_management": {
+          "enabled": true,
+          "api_url": "https://qa1-subscription.api.tastefullysimple.com/store/1"
+        }
+      }
+    },
+    {
+      "name": "Business-Sandbox",
       "id": "bold",
       "meta": {
         "desktop_screenshot": "desktop_bold.png",
