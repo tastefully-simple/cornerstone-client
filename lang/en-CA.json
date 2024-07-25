@@ -1,0 +1,10 @@
+{
+    "header": {
+        "welcome_back": "Good day, {name}",
+        "sign_out": "Sign Out"
+    },
+    "brand": {
+        "label": "Brands",
+        "view_brands": "View all brands"
+    }
+}
