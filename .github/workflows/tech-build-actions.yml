@@ -39,20 +39,7 @@ jobs:
     - name: Install Dependencies
       run: npm ci
 
-    - name: Connect to store
-      env:
-        URL: ${{ secrets.STENCIL_STORE_URL_TECH_SANDBOX }}
-        TOKEN: ${{ secrets.STENCIL_ACCESS_TOKEN_TECH_SANDBOX }}
-        FILENAME: "`r Sys.Date()`"
-      run: echo $FILENAME
-
     - name: Set current date as env variable
-      run: echo "NOW=$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV
-    - name: Echo current date
-      run: echo $NOW # Gives "2022-12-11T01:42:20"
-      #run: stencil init -u $URL -t $TOKEN -p 3000 -h https://api.bigcommerce.com
-    #- name: Log stencil config
-      #run: cat config.stencil.json    
+      run: echo "NOW=CornerstoneTheme-$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV
+      
 
-    #- name: Publishing theme to Tech-Sandbox, automatically deleting oldest theme if necessary
-      #run: stencil push -a Tech-Sandbox -c TS.com - Technology Sandbox -d
