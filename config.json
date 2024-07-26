@@ -46,30 +46,6 @@
     "Firefox ESR"
   ],
   "settings": {
-    "channels": [
-      {
-        "id": 1,
-        "name": "Light",
-        "code": "Light",
-        "is_active": true,
-        "switch_url": "https://cornerstone-light-demo.mybigcommerce.com"
-      },
-      {
-        "id": 2,
-        "name": "Bold",
-        "code": "Bold",
-        "is_active": false,
-        "switch_url": "https://cornerstone-bold-demo.mybigcommerce.com"
-      },
-      {
-        "id": 3,
-        "name": "Warm",
-        "code": "Warm",
-        "is_active": false,
-        "switch_url": "https://cornerstone-warm-demo.mybigcommerce.com"
-      }
-    ],
-    "show_channels": false,
     "ts_api_environment": "qa1",
     "ts_current_store_base_url": "https://tastefully-simple-sandbox-2.mybigcommerce.com",
     "ts_shop_more_url": "/shop/",
